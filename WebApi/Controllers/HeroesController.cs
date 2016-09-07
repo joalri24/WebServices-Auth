@@ -13,6 +13,7 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
+    [Authorize]
     public class HeroesController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();
